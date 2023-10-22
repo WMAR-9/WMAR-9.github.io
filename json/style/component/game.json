@@ -1,0 +1,33 @@
+{
+    "layer1":{
+        "element":"div",
+        "class":"row tx-white fix-min-content"
+    },
+    "layer2":{
+        "element":"div",
+        "class":"col-2",
+        "content":{
+            "layer1":{
+                "element":"div",
+                "class":"col-9",
+                "content":{
+                    "layer1":{
+                        "element":"div",
+                        "class":"col-1",
+                        "id":"sidebar"
+                    }
+                }
+            },
+            "layer2":{
+                "element":"div",
+                "class":"row",
+                "id":"content"
+            }
+        }
+    },
+    "layer3":{
+        "element":"div",
+        "class":"row",
+        "id":"suggestion"
+    }
+}

@@ -1,0 +1,32 @@
+<script>
+    if(window.location.href.includes("game.html"))window.history.back()
+    // inital 
+    const app = "app"
+    const content = "content"
+    const sidebar = "sidebar"
+    const suggestion = "suggestion"
+    const file = "../json/style/component/game.json"
+
+    const url = new URL(window.location.href)
+
+    
+    const route = url.searchParams.get("route")
+    const tag = url.searchParams.get("tag")
+    
+    // frame
+    addElement(app,file)
+    
+    // sidebar
+    addSidebar(sidebar,"",route)
+
+    // 9 block size for work
+
+    addContent(content,"../json/game/game.json",tag)
+
+    // ad list
+    addSuggestion(suggestion,"",tag)
+
+
+    // footer
+    addElement(app,"../json/style/component/footer.json")
+</script>

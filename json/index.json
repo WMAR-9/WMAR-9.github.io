@@ -1,0 +1,12 @@
+{
+    "Game":{
+        "Data":"./game/game.json",
+        "Route":"../pages/Game/game.html",
+        "Style":"./style/component/article.json"
+    },
+    "Web":{
+        "Data":"./article/article.json",
+        "Route":"../pages/Web/web.html",
+        "Style":"./style/component/game.json"
+    }
+}

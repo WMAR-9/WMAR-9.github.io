@@ -1,0 +1,29 @@
+{
+    "layer1":{
+        "element":"div",
+        "class":"row tx-white fix-min-content",
+        "content":""
+    },
+    "layer2":{
+        "element":"col-2",
+        "class":"layer2",
+        "content":{
+            "layer1":{
+                "element":"div",
+                "class":"layer2_item",
+                "content":"AT"
+            }
+        }
+    },
+    "layer3":{
+        "element":"div",
+        "class":"item",
+        "content":{
+            "layer1":{
+                "element":"div",
+                "class":"container",
+                "content":"layer_3"
+            }
+        }
+    }
+}

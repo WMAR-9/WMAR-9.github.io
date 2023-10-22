@@ -1,0 +1,14 @@
+{
+    "tile1":{
+        "Title":"Title1",
+        "Description":"TEST",
+        "Link":"?route=game&tag=game",
+        "Cover":["image1","image2"]
+    },
+    "tile2":{
+        "Title":"Title1",
+        "Description":"TEST",
+        "Link":"",
+        "Cover":["image1","image2"]
+    }
+}

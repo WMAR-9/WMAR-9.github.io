@@ -1,0 +1,12 @@
+{
+    "layer1":{
+        "element":"footer",
+        "class":"tx-white bottom",
+        "content":""
+    },
+    "layer2":{
+        "element":"p",
+        "class":"",
+        "content":"copyright"
+    }
+}

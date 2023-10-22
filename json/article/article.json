@@ -1,0 +1,22 @@
+{
+    "blog":{
+        "Creation_1": {
+            "Title": "Game Title 1",
+            "Author": "Author Name 1",
+            "Cover": ["Cover Image URL 1"],
+            "Link":"",
+            "Description":"content",
+            "SkillTag": ["html", "javascript"],
+            "Type": ["2021", "JS13KGame"]
+        },
+        "Creation_2": {
+            "Title": "Game Title 2",
+            "Author": "Author Name 2",
+            "Cover": ["Cover Image URL 2"],
+            "Link":"",
+            "Description":"content",
+            "SkillTag": ["html", "javascript"],
+            "Type": ["2020", "JS13KGame"]
+        }
+    }
+}

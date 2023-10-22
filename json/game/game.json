@@ -1,0 +1,64 @@
+{
+    "JS13K":{
+        "Creation_1": {
+            "Title": "404 princess",
+            "Author": "Marvin --",
+            "Thumbnail":"../img/game/404/1.png",
+            "Cover": ["../img/game/404/1.png","../img/game/404/2.png"],
+            "Link":"URL",
+            "Description":"content",
+            "SkillTag": ["javascript","html","css"],
+            "Type": ["2020", "JS13KGame","Desktop"]
+        },
+        "Creation_2": {
+            "Title": "Giant Jump",
+            "Author": "Marvin --",
+            "Thumbnail":"",
+            "Cover": ["../img/game/404/1.png","../img/game/404/2.png"],
+            "Link":"URL",
+            "Description":"content",
+            "SkillTag": ["javascript","html","css"],
+            "Type": ["2021", "JS13KGame","Desktop","Hell"]
+        },
+        "Creation_3": {
+            "Title": "Save lives",
+            "Author": "Marvin",
+            "Thumbnail":"../img/game/404/1.png",
+            "Cover": ["../img/game/404/1.png","../img/game/404/2.png"],
+            "Link":"URL",
+            "Description":"content",
+            "SkillTag": ["javascript","html","css"],
+            "Type": ["2022", "JS13KGame","Mobile"]
+        },
+        "Creation_4": {
+            "Title": "Knight",
+            "Author": "Marvin and Sandy",
+            "Thumbnail":"",
+            "Cover": ["../img/game/404/1.png","../img/game/404/2.png"],
+            "Link":"URL",
+            "Description":"content",
+            "SkillTag": ["javascript","html","css"],
+            "Type": ["2023", "JS13KGame","Mobile"]
+        }
+    },
+    "Font":{
+        "Creation_1": {
+            "Title": "Game Title 1",
+            "Author": "Author Name 1",
+            "Cover": ["Cover Image URL 1"],
+            "Link":"",
+            "Description":"content",
+            "SkillTag": ["html", "javascript"],
+            "Type": ["2021", "JS13KGame"]
+        },
+        "Creation_2": {
+            "Title": "Game Title 2",
+            "Author": "Author Name 2",
+            "Cover": ["Cover Image URL 2"],
+            "Link":"",
+            "Description":"content",
+            "SkillTag": ["html", "javascript"],
+            "Type": ["2020", "JS13KGame"]
+        }
+    }
+}

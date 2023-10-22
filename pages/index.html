@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/icon.png">
+  <title>wmar's pages</title>
+  <script src="../js/basic/basic.js"></script>
+  <script src="../js/basic/fetchJson.js"></script>
+  <script src="../js/util/embed.js"></script>
+  <script src="../js/util/addElement.js"></script>
+  <script src="../js/util/content.js"></script>
+  <script src="../js/util/sidebar.js"></script>
+  <script src="../js/util/randomlist.js"></script>
+  <script src="../js/api/fetchData.js"></script>
+</head>
+<body class="bg-dark">
+
+  <header class="tx-white">
+    <img src="../img/icon.png" class="roundImage"/>
+    WMar-9's Blog
+  </header>
+  <div class="backtop tx-white bg-darkblue tx_bold borderRadius">
+    <span onclick="backToTop()">▲</span>
+  </div>
+
+  <div id="app"></div>
+  <script>
+
+      //const dirAPI = fetchData("GET","https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWB-373C6328-6BF2-41B3-BB3B-147802B82875&format=JSON&locationName=&elementName=&sort=time")
+      //console.log(dirAPI)
+
+    const Agenda =async dirPath =>{
+
+      const dirJson = await fetchDir(dirPath)
+        
+      const url = new URL(window.location.href)
+      const route = url.searchParams.get("route")
+      const tag = url.searchParams.get("tag")
+      
+      let redierct = true
+      
+      console.log("parm :",route,tag)
+      
+      for(var id in dirJson){
+
+        const lowerCaseID = id.toLowerCase()
+        
+        if(lowerCaseID==route){
+          embedHtml("app",`./${id}/${lowerCaseID}.html`)
+          redierct = false
+          break;
+        }
+
+      }
+      if(redierct&&dirJson){
+        const homePage = Object.keys(dirJson)[0]
+        const newURL = url.toString().replace(/(route=)[^&]+/, `$1${homePage}`)
+        window.history.pushState({}, "", newURL)
+
+        console.log("homepage ",homePage)
+
+        embedHtml("app",`./${homePage}/${homePage}.html`)
+      }
+    }
+
+    Agenda("../json/index.json")
+  </script>
+  <script src="../js/react/userAction.js"></script>
+</body>
+</html>
